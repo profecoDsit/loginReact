@@ -29,7 +29,7 @@ export default function RutasApp(){
                         {/* aqui se hace la autenticacion a nivel de ruta, cada vez que Ingrese a una ruta para comprobar una vista
                         primero hara una autenticacion y muestra la ruta, en caso negativo no estar autenticado redirigira al loggin */}
                         <Route exact path='/account' component={PaginaCuenta} />
-                        <PrivateRoute exact path='/projects' component={PaginaProyectos} />
+                        <Route exact path='/projects' component={PaginaProyectos} />
                         <Route exact path='/project/:projectId' component={PaginaProyecto} />
                         <Route exact path='/admin/users' component={PaginaUsuarios} />
                         <Route exact path='*' component={PaginaNoEncontrada} />
